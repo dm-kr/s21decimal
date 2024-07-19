@@ -112,6 +112,9 @@ int s21_is_greater_or_equal(s21_decimal value_1, s21_decimal value_2) {
 int s21_is_equal(s21_decimal value_1, s21_decimal value_2) {
   int result = 1;
   bool are_zeros = is_null(value_1) && is_null(value_2);
+
+  // TODO Отбросить нули
+
   for (int i = 0; i < 128 && result == 1; i++) {
     if (bit(value_1, i) != bit(value_2, i)) result = 0;
   }

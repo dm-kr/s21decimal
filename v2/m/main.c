@@ -55,14 +55,13 @@ int main() {
 
   //====32=bit=shit====//
 
-  s21_decimal val = {{128, 0, 0, 0}};
-  s21_decimal res = {0};
-  s_scale(&val, 1);
-  s21_round(val, &res);
-  float fres = 0;
-  int error = s21_from_decimal_to_float(res, &fres);
-  float need = 13;
-
+  // s21_decimal val = Decimal(431);
+  // s21_decimal res = {0};
+  // s_scale(&val, 1);
+  // s21_round(val, &res);
+  // float fres = 0;
+  // int error = s21_from_decimal_to_float(res, &fres);
+  // float need = 13;
   // s21_decimal a = {{123456789, 0, 0, 0}};
   // s_scale(&a, 5);
   // s21_decimal b = Decimal(10);
@@ -76,7 +75,7 @@ int main() {
   // print(a);
   // print(b);
   // int error = s21_div(a, b, &res);
-  print(res);
+  // print(res);
   // int x = 0;
   // s21_from_decimal_to_int(a, &x);
   // printf("%d\n", x);
@@ -88,6 +87,6 @@ int main() {
   // printf("%g\n", f);
   // int error = s21_from_float_to_decimal(f, &a);
   // print(a);
-  printf("\nError: %d\n", error);
+  // printf("\nError: %d\n", error);
   return 0;
 }
